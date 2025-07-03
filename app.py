@@ -1,10 +1,8 @@
-from database import init_app, db
+from flask import Flask
 from cotizacion_controller import cotizacion_bp
 
-app = init_app()
+app = Flask(__name__)
 app.register_blueprint(cotizacion_bp)
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
     app.run(debug=True)
