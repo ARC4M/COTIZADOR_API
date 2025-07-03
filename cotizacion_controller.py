@@ -7,9 +7,6 @@ import os
 from datetime import datetime
 import jwt
 from functools import wraps
-
-cotizacion_bp = Blueprint("cotizacion", __name__)
-# --- Endpoint para generar código de invitación para registro de empresa ---
 import secrets
 from datetime import timedelta
 from flask import Blueprint
