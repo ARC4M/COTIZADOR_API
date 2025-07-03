@@ -451,3 +451,7 @@ def logout(empresa):
     db.session.commit()
     return jsonify({'mensaje': 'Sesión cerrada.'}), 200
 
+@cotizacion_bp.route('/', methods=['GET'])
+def home():
+    return jsonify({"mensaje": "Bienvenido a la API de Cotizador"}), 200
+
