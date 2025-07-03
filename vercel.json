@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "cotizacion_controller.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "cotizacion_controller.py"
+    }
+  ]
+}
